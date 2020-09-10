@@ -1,0 +1,38 @@
+{
+    "常用推荐": {
+        "github": {
+            "url": "https://www.github.com/",
+            "name": "Github",
+            "kw": "gh",
+            "disc": "全球最大的同性交友社区",
+            "img": "github.webp"
+        }
+    },
+    "搜索引擎": {
+        "google": {
+            "url": "https://www.google.com/",
+            "name": "Google",
+            "kw": "gg",
+            "disc": "全球最大的搜索引擎（英文优先）",
+            "img": "google.webp"
+        },
+        "谷歌": {
+            "url": "https://www.google.com.hk/",
+            "name": "Google 中文",
+            "disc": "全球最大的搜索引擎（中文优先）",
+            "img": "google.webp"
+        }
+    },
+    "海南大学": {
+        
+    },
+    "发现产品": {
+
+    },
+    "应用商城": {
+        
+    },
+    "关注博客":{
+        
+    }
+}
