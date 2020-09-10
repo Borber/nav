@@ -1,0 +1,31 @@
+name: Nav
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          submodules: true
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.9.0-beta.4'
+
+      - name: Build
+        run: |
+          cd generator
+          python generator.py
+          cd ..
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.personal_token }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./
+          commit_message: ${{ github.event.head_commit.message }}
